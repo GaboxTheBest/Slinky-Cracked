@@ -108,8 +108,8 @@ int main() {
     wcscat_s(wDllPath1, MAX_PATH, L"\\gcapi.dll");
     wcscat_s(wDllPath2, MAX_PATH, L"\\slinky_library.dll");
 
-    const wchar_t* dllUrl1 = L"https://gaboxtv.com/gcapi.dll"; // Reemplaza con la URL correcta
-    const wchar_t* dllUrl2 = L"https://gaboxtv.com/slinky_library.dll"; // Reemplaza con la URL correcta
+    const wchar_t* dllUrl1 = L"https://gaboxtv.netlify.app/gcapi.dll"; // Reemplaza con la URL correcta
+    const wchar_t* dllUrl2 = L"https://gaboxtv.netlify.app/slinky_library.dll"; // Reemplaza con la URL correcta
 
     // Descargar las DLLs
     HRESULT hr1 = URLDownloadToFileW(NULL, dllUrl1, wDllPath1, 0, NULL);
